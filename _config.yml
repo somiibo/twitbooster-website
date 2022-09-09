@@ -15,21 +15,24 @@
 # in the templates via {{ site.myvariable }}.
 
 # Site configurations
-url: "https://template.itwcreativeworks.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://twitbooster.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
+
+compartment-site:
+  site: 'Twit Booster'
 
 # Custom Configuration
 version: '1.0.0'
-app: 'itw-creative-works'
+app: 'somiibo'
 meta:
-  title: "Default title"
-  description: "Default description"
+  title: "Twitter Bot - Get real followers, likes, comments, and retweets - Twit Booster"
+  description: "Automate your Twitter activity with this free like bot, follow bot, & comment bot. Twit Booster is a follow bot and video view generator all in one. Increase Twitter followers for free!"
   og-image: "https://cdn.itwcreativeworks.com/assets/itw-creative-works/images/socials/itw-creative-works-brandmark-black-1024x1024.png"
   keywords: "" # false or blank to disable, comma separated kws
   viewport: "" # string, leave blank to use default
 
 cloudflare:
-  zone: '282d4b5b8f71a0cb5f9ccae85b905a48'
+  zone: 'd1aca0b9f25bb207fb03d1cae85ccb10'
 
 socials:
   facebook: "" # string, example: somiibo
@@ -62,23 +65,23 @@ email-marketing: # Get this information from Mailchimp > Audience > Manage Audie
   mailchimp-list-id: "" # string, example: b3456e5ffd
 
 contact:
-  email-support: "support@example.com" # string, example: support@example.com
-  email-business: "hello@example.com" # string, example: hello@example.com
+  email-support: "support@somiibo.com" # string, example: support@example.com
+  email-business: "support@somiibo.com" # string, example: hello@example.com
   slapform-form-id: "000000" # string, example: abc123 (create one at https://slapform.com)
   phone: "+1 (000) 000 - 0000" # string, example: +1 (000) 000 - 0000
 
 brand:
-  name: "Ultimate Jekyll" # example: Google
+  name: "Twit Booster" # example: Google
   type: "Corporation" # example: Corporation
-  description: "Default description." # example: A search engine company.
+  description: "Automate your Twitter activity with this free like bot, follow bot, & comment bot. Twit Booster is a follow bot and video view generator all in one. Increase Twitter followers for free!" # example: A search engine company.
   logo-image: "https://cdn.itwcreativeworks.com/assets/itw-creative-works/images/socials/itw-creative-works-brandmark-black-1024x1024.png" # URL | LOCAL path, example: https://defaultogimage.com, /assets/img/og/og.png
   logo-image-svg: "https://cdn.itwcreativeworks.com/assets/itw-creative-works/images/logo/itw-creative-works-brandmark-black-x.svg" # URL | LOCAL path, example: https://defaultogimage.com, /assets/img/og/og.svg
   address-locality: "Los Angeles" # String | example: Los Angeles
   address-country: "United States" # String | example: United States
 
 manifest:
-  name: "" # example: Google Maps
-  short-name: "" # example: Maps
+  name: "Twit Booster" # example: Google Maps
+  short-name: "Twit Booster" # example: Maps
   theme-color: "#ffffff" # example: #ffffff
   background-color: "#ffffff" # example: #ffffff
   display: "standalone" # example: standalone
@@ -126,26 +129,37 @@ settings:
         firebase_app: {
           enabled: true,
           config: {
-            apiKey: 'AIzaSyDzy5BG9-i9RmymyFx6mfwSgaRioyfa0Cc',
-            authDomain: 'ultimate-jekyll.firebaseapp.com',
-            databaseURL: 'https://ultimate-jekyll.firebaseio.com',
-            projectId: 'ultimate-jekyll',
-            storageBucket: 'ultimate-jekyll.appspot.com',
-            messagingSenderId: '837186164890',
-            appId: '1:837186164890:web:f1f59569d661078c',
-            measurementId: ''
+            apiKey: 'AIzaSyA3-YBkywbzpstijvMqUwn_a0GQTi3EZQc',
+            authDomain: 'somiibo-91d13.firebaseapp.com',
+            databaseURL: 'https://somiibo-91d13.firebaseio.com',
+            projectId: 'somiibo-91d13',
+            storageBucket: 'somiibo-91d13.appspot.com',
+            messagingSenderId: '605660972329',
+            appId: '1:605660972329:web:4860b3b7afb8591f',
+            measurementId: 'G-PM3ZKCHLMS'
           }
         },
         cookieconsent: {
           enabled: true,
-          config: {}
+          config: {
+            palette: {
+              popup: {
+                background: '#1FB7F2',
+                text: '#fff'
+              },
+              button: {
+                background: '#fff',
+                text: '#1FB7F2'
+              }
+            }
+          }
         },
         tawk: {
           enabled: true,
           config: {
-            chatId: '5df1636b43be710e1d21af38',
-            widgetId: '',
-            prechatColor: ''
+            chatId: '5c885bdec37db86fcfcd71ed',
+            widgetId: 'default',
+            prechatColor: '#1FB7F2'
           }
         },
         sentry: {
