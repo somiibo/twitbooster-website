@@ -15,10 +15,10 @@ meta:
 We at {{ site.brand.name }} are a great company and would love to design an intuitive solution for you!
 
 ## Create an account at {{ site.brand.name }}
-- [My account](https://somiibo.com/authentication/account)
-- [Sign in](https://somiibo.com/authentication/signin)
-- [Sign up](https://somiibo.com/authentication/signup)
-- [Recover account](https://somiibo.com/authentication/forgot)
+- [My account](https://somiibo.com/account)
+- [Sign in](https://somiibo.com/signin)
+- [Sign up](https://somiibo.com/signup)
+- [Recover account](https://somiibo.com/forgot)
 
 ## Navigation
 - [Contact us](https://somiibo.com/contact)
