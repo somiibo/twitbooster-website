@@ -76,7 +76,7 @@
       app: 'somiibo',
       version: '1.0.0',
       url: 'https://twitbooster.com',
-      cacheBreaker: '1701391059',
+      cacheBreaker: '1701414800',
       settings:  { libraries: { firebase_app: { enabled: true, config: { apiKey: 'AIzaSyA3-YBkywbzpstijvMqUwn_a0GQTi3EZQc', authDomain: 'somiibo.com', databaseURL: 'https://somiibo-91d13.firebaseio.com', projectId: 'somiibo-91d13', storageBucket: 'somiibo-91d13.appspot.com', messagingSenderId: '605660972329', appId: '1:605660972329:web:4860b3b7afb8591f', measurementId: 'G-PM3ZKCHLMS', }, }, firebase_appCheck: { enabled: false, config: { siteKey: '6LddIDsoAAAAAIlymzmJuwr9Ktz7vS7e0LLxY4kd', }, }, cookieconsent: { enabled: true, config: { palette: { popup: { background: '#1fb7f2', text: '#fff', }, button: { background: '#fff', text: '#1fb7f2', }, }, }, }, chatsy: { enabled: true, config: { accountId: '98WVIFYdGrUbjL4jgyXLPe8ICFt1', chatId: 'NcEywcnfLMs1cB', settings: { openChatButton: { background: '#1fb7f2', text: '#fff', }, }, }, }, sentry: { enabled: true, config: { dsn: '', release: 'ultimate-jekyll-website', replaysSessionSampleRate: 0.1, replaysOnErrorSampleRate: 1.0, }, }, }, exitPopup: { enabled: true, config: { timeout: 1000 * 60 * 60 * 4, handler: null, title: 'Special Offer!', message: 'Get 15% off your purchase of our <strong>Premium plans</strong>. <br><br> Get access to all features and unlimited usage.', okButton: { text: 'Claim 15% Discount', link: '/pricing?utm_source=exit-popup&utm_medium=popup&utm_campaign={pathname}', }, }, }, } ,
       brand: {
         name: 'Twit Booster',
@@ -110,13 +110,13 @@
   };
 </script>
 
-<!-- Favicon --><link rel="apple-touch-icon" sizes="180x180" href="https://twitbooster.com/assets/images/favicon/apple-touch-icon.png?cb=1701391059">
-<link rel="icon" type="image/png" sizes="32x32" href="https://twitbooster.com/assets/images/favicon/favicon-32x32.png?cb=1701391059">
-<link rel="icon" type="image/png" sizes="16x16" href="https://twitbooster.com/assets/images/favicon/favicon-16x16.png?cb=1701391059">
+<!-- Favicon --><link rel="apple-touch-icon" sizes="180x180" href="https://twitbooster.com/assets/images/favicon/apple-touch-icon.png?cb=1701414800">
+<link rel="icon" type="image/png" sizes="32x32" href="https://twitbooster.com/assets/images/favicon/favicon-32x32.png?cb=1701414800">
+<link rel="icon" type="image/png" sizes="16x16" href="https://twitbooster.com/assets/images/favicon/favicon-16x16.png?cb=1701414800">
 <link rel="mask-icon" href="https://twitbooster.com/assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="https://twitbooster.com/assets/images/favicon/favicon.ico?cb=1701391059">
+<link rel="shortcut icon" href="https://twitbooster.com/assets/images/favicon/favicon.ico?cb=1701414800">
 <meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-config" content="https://twitbooster.com/assets/images/favicon/browserconfig.xml?cb=1701391059">
+<meta name="msapplication-config" content="https://twitbooster.com/assets/images/favicon/browserconfig.xml?cb=1701414800">
 <meta name="theme-color" content="#ffffff">
 
 <!-- CSS - Defaults-->
@@ -376,7 +376,7 @@ footer, header, hgroup, menu, nav, section {
 
 <!-- Style - IE 8 and Below Only -->
 <!--[if lte IE 8]>
-<link rel="stylesheet" type="text/css" href="/assets/css/master/lte-ie8.css?cb=1701391059">
+<link rel="stylesheet" type="text/css" href="/assets/css/master/lte-ie8.css?cb=1701414800">
 <![endif]-->
 
 <!-- App - Head Content -->
@@ -707,7 +707,7 @@ footer, header, hgroup, menu, nav, section {
           <th>Email</th>
           <th>Active</th>
           <th>Roles</th>
-          <th>Edit</th>
+          <th>Manage</th>
         </tr>
       </thead>
 
@@ -778,6 +778,23 @@ footer, header, hgroup, menu, nav, section {
   </div>
 </div>
 
+<div id="signin-as-modal" class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Signin As</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form onsubmit="return false;">
+        <div class="modal-body" style="max-height: 80vh; overflow: scroll;">
+          <p>
+            You have signed in as this user. You can now navigate to the <a id="signin-as-modal-url" href="#" class="text-primary" target="_blank">account page</a> to view this user's account.
+          </p>
+      </form>
+    </div>
+  </div>
+</div>
+
 <script type="text/javascript">
   var dataTemplate = `
     <tr>
@@ -806,7 +823,7 @@ footer, header, hgroup, menu, nav, section {
       <td>
         <div class="dropdown">
           <a class="btn btn-white btn-sm dropdown-toggle dropdown-toggle-empty" href="#" role="button" id="dropdownMenuLink-{userUid}" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi-pencil me-2"></i> Edit
+            <i class="bi-pencil me-2"></i> Manage
           </a>
 
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink-{userUid}">
@@ -814,6 +831,8 @@ footer, header, hgroup, menu, nav, section {
               <a class="dropdown-item user-open-btn" href="javascript:;" data-uid="{userUid}"><i class="bi-eye-fill me-2 pointer-none"></i>View user</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item user-premium-btn" href="javascript:;" data-uid="{userUid}"><i class="bi-star-fill me-2 pointer-none"></i>Give premium</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item user-signin-as-btn text-primary" href="javascript:;" data-uid="{userUid}"><i class="bi-key-fill me-2 pointer-none"></i>Sign in as</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item user-signout-btn text-danger" href="javascript:;" data-uid="{userUid}"><i class="bi-door-open-fill me-2 pointer-none"></i>Sign out all sessions</a>
             </li>
@@ -837,58 +856,43 @@ footer, header, hgroup, menu, nav, section {
 
     var $expandModal = document.getElementById('expand-modal');
     var $premiumModal = document.getElementById('premium-modal');
+    var $signinAsModal = document.getElementById('signin-as-modal');
     var expandModal = new bootstrap.Modal($expandModal, {});
     var premiumModal = new bootstrap.Modal($premiumModal, {});
+    var signinAsModal = new bootstrap.Modal($signinAsModal, {});
 
     // var serverDev = 'http://localhost:5001/' + Manager.properties.options.libraries.firebase_app.config.projectId + '/us-central1/bm_api';
     var serverProd = 'https://us-central1-' + Manager.properties.options.libraries.firebase_app.config.projectId + '.cloudfunctions.net/bm_api';
 
     table = Admin().initializeTable();
 
-    firebase.firestore().collection('apps')
-      .get()
-      .then(function(snapshot) {
+    document.addEventListener('submit', function (event) {
+      if (event.target.matches('#datatable-search-form')) {
+        handleSearch(searchInput.value || '')
+      } else if (event.target.matches('#datatable-premium-form')) {
+        handlePremiumForm(event)
+      }
+    })
 
-        snapshot
-        .forEach(function (val, i) {
-          var data = val.data();
-          appMap[data.id] = {
-            name: data.name,
-            brandmark: data.images.brandmark,
-          };
-        });
+    document.addEventListener('click', function (event) {
+      handleClick(event)
+    })
 
-        document.addEventListener('submit', function (event) {
-          if (event.target.matches('#datatable-search-form')) {
-            handleSearch(searchInput.value || '')
-          } else if (event.target.matches('#datatable-premium-form')) {
-            handlePremiumForm(event)
-          }
-        })
+    if (qsQuery) {
+      searchInput.value = qsQuery;
+      handleSearch(qsQuery)
+    } else {
+      Admin().display('ready');
+    }
 
-        document.addEventListener('click', function (event) {
-          handleClick(event)
-        })
-
-        if (qsQuery) {
-          searchInput.value = qsQuery;
-          handleSearch(qsQuery)
-        } else {
-          Admin().display('ready');
-        }
-
-        if (Manager.properties.meta.environment === 'development') {
-          // handleSearch('100')
-        }
-
-      })
-      .catch(function(e) {
-
-      })
+    if (Manager.properties.meta.environment === 'development') {
+      // handleSearch('100')
+    }
 
     // HERE
     function handleSearch(input) {
-      console.log('---search...', input);
+      console.log('Search...', input);
+
       Admin().display('loading');
 
       if (input.length < 3) {
@@ -972,7 +976,7 @@ footer, header, hgroup, menu, nav, section {
       .catch(function (e) {
         Admin().display(e);
       })
-  }
+    }
 
     function handlePremiumForm(event) {
       var uid = event.target.querySelector('input[name="uid"]').value;
@@ -1032,6 +1036,10 @@ footer, header, hgroup, menu, nav, section {
         var uid = event.target.dataset.uid;
 
         handleSignOutAllSessions(uid);
+      } else if (event.target.matches('.user-signin-as-btn')) {
+        var uid = event.target.dataset.uid;
+
+        handleSignInAs(uid);
       }
     }
 
@@ -1062,6 +1070,62 @@ footer, header, hgroup, menu, nav, section {
             .catch(function (e) {
               console.error('Error signing out all sessions for ' + uid, e);
               alert('Error signing out all sessions for ' + uid + ': ' + e)
+              return reject(e);
+            })
+          })
+      });
+    }
+
+    function handleSignInAs(uid) {
+      return new Promise(function (resolve, reject) {
+        var user = firebase.auth().currentUser;
+
+        console.log('handleSignInAs():', uid);
+
+        user.getIdToken(true)
+          .then(function (token) {
+            WonderfulFetch(serverProd, {
+              method: 'POST',
+              tries: 2,
+              timeout: 30000,
+              response: 'json',
+              body: {
+                authenticationToken: token,
+                command: 'user:create-custom-token',
+                payload: {
+                  uid: uid,
+                }
+              },
+            })
+            .then(function (json) {
+              var url = new URL(window.location.href);
+              var destination = new URL(window.location.href);
+
+              // Set up the signout URL
+              url.pathname = '/signin';
+              url.searchParams.set('signout', true);
+              url.searchParams.set('token', json.token);
+
+              // Create a new URL object for the destination
+              destination.pathname = '/account';
+
+              // Set the destination parameter to the destination URL
+              url.searchParams.set('destination', destination.toString());
+
+              console.log('handleSignInAs(): Successfully created custom token for ' + uid, json);
+
+              signinAsModal.show();
+
+              document.getElementById('signin-as-modal-url').href = url.toString();
+
+              // Open the new URL in a new tab
+              window.open(url.toString(), '_blank');
+
+              return resolve(json);
+            })
+            .catch(function (e) {
+              console.error('handleSignInAs(): Error creating custom token for ' + uid, e);
+
               return reject(e);
             })
           })
@@ -1383,7 +1447,7 @@ footer, header, hgroup, menu, nav, section {
 <!-- JS Global Compulsory  --> <script src="https://cdn.itwcreativeworks.com/assets/ultimate-jekyll/vendor/front-admin/v2/vendor/jquery/dist/jquery.min.js"></script> <script src="https://cdn.itwcreativeworks.com/assets/ultimate-jekyll/vendor/front-admin/v2/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script> <script src="https://cdn.itwcreativeworks.com/assets/ultimate-jekyll/vendor/front-admin/v2/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <!-- JS Implementing Plugins --> <script src="https://cdn.itwcreativeworks.com/assets/ultimate-jekyll/vendor/front-admin/v2/vendor/datatables/media/js/jquery.dataTables.min.js"></script> <script src="https://cdn.itwcreativeworks.com/assets/ultimate-jekyll/vendor/front-admin/v2/vendor/datatables.net.extensions/select/select.min.js"></script> <!-- <script src="https://cdn.itwcreativeworks.com/assets/ultimate-jekyll/vendor/front-admin/v2/vendor/datatables.net-buttons/js/dataTables.buttons.min.js"></script> --> <!-- <script src="https://cdn.itwcreativeworks.com/assets/ultimate-jekyll/vendor/front-admin/v2/vendor/datatables.net-buttons/js/buttons.flash.min.js"></script> -->
 <!-- JS Front --> <script src="https://cdn.itwcreativeworks.com/assets/ultimate-jekyll/vendor/front-admin/v2/js/theme.min.js"></script>
-<!-- ITW CW --> <script src="https://cdn.jsdelivr.net/npm/wonderful-fetch@latest/dist/index.min.js?cb=1701391059"></script> <script type="text/javascript" src="https://twitbooster.com/assets/js/base.js?cb=1701391059" async defer></script><style media="screen">
+<!-- ITW CW --> <script src="https://cdn.jsdelivr.net/npm/wonderful-fetch@latest/dist/index.min.js?cb=1701414800"></script> <script type="text/javascript" src="https://twitbooster.com/assets/js/base.js?cb=1701414800" async defer></script><style media="screen">
   body[data-theme="dark"] #main-logo {
     filter: brightness(0) invert(1);
   }
