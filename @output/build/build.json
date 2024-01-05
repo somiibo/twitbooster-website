@@ -5,13 +5,13 @@
     "name": "twitbooster-website"
   },
   "npm-build": {
-    "timestamp": "2024-01-01T00:38:22.542Z"
+    "timestamp": "2024-01-05T11:37:53.867Z"
   },
   "gh-pages-push": {
     "timestamp": "%GHP_TIMESTAMP%"
   },
   "packages": {
-    "web-manager": "3.2.30"
+    "web-manager": "3.2.33"
   },
   "brand": {
     "name": "Twit Booster",
