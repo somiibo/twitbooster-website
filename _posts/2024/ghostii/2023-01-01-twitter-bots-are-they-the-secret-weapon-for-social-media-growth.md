@@ -8,8 +8,8 @@ post:
   excerpt: "Discover how Twitter bots can be a powerful tool for social media growth, exploring their functionalities, benefits, and the ethical considerations surrounding their use."
   author: alex
   id: 1716781131
-  tags:
-  categories:
+  tags: ["business marketing"]
+  categories: ["Marketing", "Business"]
   affiliate-search-term:
 ---
 
