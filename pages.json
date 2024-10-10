@@ -147,17 +147,17 @@
         "type": ""
       },
     {
-        "url": "https://twitbooster.com/admin/posts/create",
-        "title": "Create Post",
-        "desc": "Create blog posts with ease, including the beautiful markdown editor StackEdit.",
+        "url": "https://twitbooster.com/admin/notifications/create",
+        "title": "Create Notification",
+        "desc": "Send push notifications to capture your audience!",
         "breadcrumb": "Create",
         "category": "",
         "type": ""
       },
     {
-        "url": "https://twitbooster.com/admin/notifications/create",
-        "title": "Create Notification",
-        "desc": "Send push notifications to capture your audience!",
+        "url": "https://twitbooster.com/admin/posts/create",
+        "title": "Create Post",
+        "desc": "Create blog posts with ease, including the beautiful markdown editor StackEdit.",
         "breadcrumb": "Create",
         "category": "",
         "type": ""
@@ -243,18 +243,18 @@
         "type": ""
       },
     {
-        "url": "https://twitbooster.com/admin/posts",
-        "title": "Posts",
-        "desc": "View posts",
-        "breadcrumb": "Posts",
-        "category": "",
-        "type": ""
-      },
-    {
         "url": "https://twitbooster.com/admin/notifications",
         "title": "Notifications",
         "desc": "View notifications",
         "breadcrumb": "Notifications",
+        "category": "",
+        "type": ""
+      },
+    {
+        "url": "https://twitbooster.com/admin/posts",
+        "title": "Posts",
+        "desc": "View posts",
+        "breadcrumb": "Posts",
         "category": "",
         "type": ""
       },
@@ -401,6 +401,14 @@
         "breadcrumb": "Webhook",
         "category": "",
         "type": ""
+      },
+    {
+        "url": "https://twitbooster.com/blog/twitter-marketing-in-the-age-of-automation-navigating-new-trends",
+        "title": "",
+        "desc": "",
+        "breadcrumb": "",
+        "category": "",
+        "type": "post"
       },
     {
         "url": "https://twitbooster.com/blog/exploring-the-impact-of-automation-on-social-media-marketing",
