@@ -6,7 +6,7 @@
   "description": "Automate your Twitter activity with this free like bot, follow bot, & comment bot. Twit Booster is a follow bot and video view generator all in one. Increase Twitter followers for free!",
   "generator": "Jekyll 4.3.2",
   "language": "en",
-  "favicon": "",
+  "favicon": "https://cdn.itwcreativeworks.com/assets/somiibo/images/favicon",
   "items": [
       {"id": "https://twitbooster.com/blog/navigating-twitter-s-landscape-tips-for-sustainable-growth",
         "url": "https://twitbooster.com/blog/navigating-twitter-s-landscape-tips-for-sustainable-growth",
