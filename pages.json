@@ -235,18 +235,18 @@
         "type": ""
       },
     {
-        "url": "https://twitbooster.com/admin/posts",
-        "title": "Posts",
-        "desc": "View posts",
-        "breadcrumb": "Posts",
-        "category": "",
-        "type": ""
-      },
-    {
         "url": "https://twitbooster.com/admin/users",
         "title": "Explore Users",
         "desc": "Explore users with this Firestore query tool.",
         "breadcrumb": "Explore Users",
+        "category": "",
+        "type": ""
+      },
+    {
+        "url": "https://twitbooster.com/admin/posts",
+        "title": "Posts",
+        "desc": "View posts",
+        "breadcrumb": "Posts",
         "category": "",
         "type": ""
       },
@@ -401,6 +401,14 @@
         "breadcrumb": "Webhook",
         "category": "",
         "type": ""
+      },
+    {
+        "url": "https://twitbooster.com/blog/unlocking-the-power-of-twitter-strategies-for-organic-growth",
+        "title": "",
+        "desc": "",
+        "breadcrumb": "",
+        "category": "",
+        "type": "post"
       },
     {
         "url": "https://twitbooster.com/blog/can-somiibo-s-twitter-bot-transform-your-social-media-strategy",
