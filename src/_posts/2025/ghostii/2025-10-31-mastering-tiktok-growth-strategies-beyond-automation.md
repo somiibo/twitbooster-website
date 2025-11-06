@@ -1,6 +1,6 @@
 ---
 ### ALL PAGES ###
-layout: app/blog/post
+layout: blueprint/blog/post
 
 ### POST ONLY ###
 post:
@@ -35,7 +35,7 @@ Moreover, TikTok's algorithm loves engagement. When you interact authentically w
 
 Staying ahead also means keeping up with trends and adapting your strategy accordingly. TikTok is a fast-paced platform; trends come and go like seasons. Being able to pivot quickly and ride the wave of what's hot can set you apart. Check out resources like the [Hootsuite TikTok Marketing Guide](https://blog.hootsuite.com/tiktok-marketing/) for insights on how to stay on top of your game. 
 
-{% include /master/modules/adunits/adsense-in-article.html index="0" %}
+
 
 In essence, while automation tools like those offered by [TwitBooster](https://twitbooster.com/blog/how-to-optimize-your-tiktok-account-with-twitbooster) are fantastic for scaling your efforts, going beyond them is crucial for creating a vibrant, engaged community. So, sprinkle a bit of humanity into your strategy, and watch your TikTok presence flourish like never before. Embrace the chaos, dance a little, and let your unique voice shine!
 
@@ -65,7 +65,7 @@ First things first, it's crucial to keep the conversation going. TikTok is all a
 
 Another way to engage is by leveraging user-generated content. Encourage your followers to create videos using your sounds or hashtags. This not only boosts your visibility but also builds a sense of community as your followers see their content featured. It's like a digital pat on the back that keeps everyone motivated and involved.
 
-{% include /master/modules/adunits/adsense-in-article.html index="1" %}
+
 
 Consistency is key in nurturing any relationship, including those with your followers. Regular posting schedules give your audience something to look forward to and help maintain your presence in their feed. Just remember, consistency doesn't mean monotony. Mix up your content with different themes, challenges, or collaborations to keep things fresh and exciting.
 
@@ -93,7 +93,7 @@ In a nutshell, the secret sauce to leveraging trends is a mix of creativity, tim
 
 Ready to take your TikTok game to the next level? Let's talk collaborations and influencers, the dynamic duo of social media marketing! Collaborating with influencers can open doors you never knew existed. It's like teaming up with the cool kids at school—suddenly, everyone wants to know you.
 
-{% include /master/modules/adunits/adsense-in-article.html index="2" %}
+
 
 First things first, find your tribe. Look for influencers whose content vibes with yours. Do their followers share your interests? If yes, you're on the right track! This isn't just about numbers; it's about building genuine connections. When an influencer authentically endorses your content, their audience is more likely to trust and follow you.
 
@@ -123,7 +123,7 @@ And speaking of adapting, check out [this guide on maximizing your social media 
 
 In the end, analytics are your backstage pass to TikTok fame. By measuring success and tweaking your strategies accordingly, you ensure that your content remains fresh, engaging, and perfectly tailored to your audience. So, keep your eyes on the numbers and your feet on the dance floor!
 
-{% include /master/modules/adunits/adsense-in-article.html index="3" %}
+
 
 ## Conclusion: Mastering TikTok Growth with a Human Touch
 
